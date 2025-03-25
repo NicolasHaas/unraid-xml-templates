@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>golang-kanban</Name>
+  <Repository>ghcr.io/nicolashaas/golang-kanban:latest</Repository>
+  <Registry>https://github.com/NicolasHaas/golang-kanban</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>Link-to-SupportThread-TDB</Support>
+  <Project>https://github.com/NicolasHaas/golang-kanban</Project>
+  <Overview>No fancy features, it just works. Just a simple Kanban board made with Golang and HTMX, no nasty Node or Next.js</Overview>
+  <Category>Tools: Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:17808]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/NicolasHaas/unraid-xml-templates/blob/main/golang-kanban.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1742940909</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="17808" Default="" Mode="tcp" Description="Container Port" Type="Port" Display="always" Required="false" Mask="false">17808</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="user" Mode="" Description="Your database user" Type="Variable" Display="always" Required="true" Mask="false">kanban</Config>
+  <Config Name="DB_PASS" Target="DB_PASS" Default="password" Mode="" Description="Password for your database user" Type="Variable" Display="always" Required="true" Mask="true">your_password_here</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="postgres" Mode="" Description="Your database host" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.50</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="5432" Mode="" Description="Your database port" Type="Variable" Display="always" Required="true" Mask="false">5432</Config>
+  <Config Name="DB_NAME" Target="DB_NAME" Default="kanban" Mode="" Description="Your database name" Type="Variable" Display="always" Required="true" Mask="false">kanban_db</Config>
+  <Config Name="SERVER_PORT" Target="SERVER_PORT" Default="17808" Mode="" Description="Which port the app should listen on inside the container" Type="Variable" Display="always" Required="false" Mask="false">17808</Config>
+  <TailscaleStateDir/>
+</Container>
