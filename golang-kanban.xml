@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>Link-to-SupportThread-TDB</Support>
+  <Support>https://forums.unraid.net/topic/188534-support-golang-kanban/</Support>
   <Project>https://github.com/NicolasHaas/golang-kanban</Project>
   <Overview>No fancy features, it just works. Just a simple Kanban board made with Golang and HTMX, no nasty Node or Next.js</Overview>
   <Category>Tools: Productivity:</Category>
