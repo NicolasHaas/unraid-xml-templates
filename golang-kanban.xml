@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>golang-kanban</Name>
-  <Repository>ghcr.io/nicolashaas/golang-kanban:latest</Repository>
+  <Repository>ghcr.io/nicolashaas/golang-kanban:v2</Repository>
   <Registry>https://github.com/NicolasHaas/golang-kanban</Registry>
   <Network>bridge</Network>
   <MyIP/>
