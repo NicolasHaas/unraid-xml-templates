@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/188534-support-golang-kanban/</Support>
   <Project>https://github.com/NicolasHaas/golang-kanban</Project>
-  <Overview>No fancy features, it just works. Just a simple Kanban board made with Golang and HTMX, no nasty Node or Next.js</Overview>
+  <Overview>No fancy features, it just works. Just a simple Kanban board made with Golang and HTMX, no nasty Node or Next.js. PostgreSQL edition: requires a separate PostgreSQL server.</Overview>
   <Category>Tools: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:17808]</WebUI>
   <TemplateURL/>
