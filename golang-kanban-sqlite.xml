@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>golang-kanban-sqlite</Name>
+  <Repository>ghcr.io/nicolashaas/golang-kanban:v2</Repository>
+  <Registry>https://github.com/NicolasHaas/golang-kanban</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/188534-support-golang-kanban/</Support>
+  <Project>https://github.com/NicolasHaas/golang-kanban</Project>
+  <Overview>No fancy features, it just works. Just a simple Kanban board made with Golang and HTMX, no nasty Node or Next.js. SQLite edition: no separate database server required.</Overview>
+  <Category>Tools: Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:17808]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/NicolasHaas/unraid-xml-templates/blob/main/golang-kanban.jpg</Icon>
+  <ExtraParams>--user=99:100</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="17808" Default="17809" Mode="tcp" Description="Web UI port." Type="Port" Display="always" Required="true" Mask="false">17809</Config>
+  <Config Name="Appdata" Target="/data" Default="/mnt/user/appdata/golang-kanban-sqlite" Mode="rw" Description="SQLite data folder." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/golang-kanban-sqlite</Config>
+  <Config Name="STORAGE" Target="STORAGE" Default="sqlite" Mode="" Description="Database backend." Type="Variable" Display="advanced" Required="true" Mask="false">sqlite</Config>
+  <Config Name="SQLITE_PATH" Target="SQLITE_PATH" Default="/data/kanban.db" Mode="" Description="SQLite database file." Type="Variable" Display="advanced" Required="true" Mask="false">/data/kanban.db</Config>
+  <Config Name="SERVER_PORT" Target="SERVER_PORT" Default="17808" Mode="" Description="Internal web port." Type="Variable" Display="advanced" Required="true" Mask="false">17808</Config>
+  <TailscaleStateDir/>
+</Container>
